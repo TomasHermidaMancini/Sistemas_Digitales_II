@@ -1,0 +1,2 @@
+source /home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader/gdbinit/symbols
+source /home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader/gdbinit/connect

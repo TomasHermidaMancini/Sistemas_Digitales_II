@@ -1,0 +1,19 @@
+Command: ninja flash
+[1/5] cd /home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build && /home/tomibuntu03/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/tomibuntu03/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/partition_table/partition-table.bin /home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/blink_min.bin
+blink_min.bin binary size 0x29a70 bytes. Smallest app partition is 0x100000 bytes. 0xd6590 bytes (84%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader && /home/tomibuntu03/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/tomibuntu03/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool.py --chip esp32c3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 blink_min.bin
+esptool.py v4.10.dev2
+Serial port /dev/ttyUSB0
+
+A fatal error occurred: Could not open /dev/ttyUSB0, the port is busy or doesn't exist.
+([Errno 11] Could not exclusively lock port /dev/ttyUSB0: [Errno 11] Resource temporarily unavailable)
+
+FAILED: CMakeFiles/flash.util 
+cd /home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min && /usr/bin/cmake -D IDF_PATH=/home/tomibuntu03/esp/esp-idf -D "SERIAL_TOOL=/home/tomibuntu03/.espressif/python_env/idf6.0_py3.12_env/bin/python;;/home/tomibuntu03/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build -P /home/tomibuntu03/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

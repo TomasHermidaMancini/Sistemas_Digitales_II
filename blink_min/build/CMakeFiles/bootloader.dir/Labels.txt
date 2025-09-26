@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/CMakeFiles/bootloader
+/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/CMakeFiles/bootloader.rule
+/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/CMakeFiles/bootloader-complete.rule
+/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/tomibuntu03/esp/Sistemas_Digitales_II/blink_min/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
